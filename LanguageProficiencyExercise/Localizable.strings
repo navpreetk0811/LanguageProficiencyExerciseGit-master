@@ -1,0 +1,10 @@
+/* 
+  StringLocalize.strings
+  LanguageProficiencyExercise
+
+  Created by Navpreet Kaur on 4/17/20.
+  Copyright © 2020 Personal. All rights reserved.
+*/
+
+"title" = "title";
+"description" = "description";
