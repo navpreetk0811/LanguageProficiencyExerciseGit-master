@@ -18,7 +18,6 @@ class BaseViewController: UIViewController {
     
     }
     // Mark: Loading Data
-    
     func checkConnectivityLoadData( _ data: CountryFile,  _ error: NSError? ){
         
         switch Network.reachability.status {
@@ -31,7 +30,6 @@ class BaseViewController: UIViewController {
         }
         callback(arrCountryDetail,nil)
     }
-   
     func loadData_(){
         let webservice  = WebserviceSigleton ()
         self.showLoader(strForMessage: "Loading...")
@@ -50,7 +48,6 @@ class BaseViewController: UIViewController {
                     if let title = item["title"] as? String{
                         countryFile.title = title
                     }
-                    
                     if let description = item["description"] as? String{
                         countryFile.description = description
                     }
